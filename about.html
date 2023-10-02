@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Blog - Tailsaw </title>
+  <link rel="stylesheet" href="https://unpkg.com/bulma@0.9.3/css/bulma.min.css" />
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/bulma-divider.min.css">
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+  	body {font-family: 'Nunito', sans-serif;};
+    nav.navbar {
+      height: 6rem !important;
+      box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .1), 0 1px 2px 0 rgba(0, 0, 0, .06) !important;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- START NAV -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="../">
+          <img src="https://img.freepik.com/premium-vector/cute-petshop-logo-with-cat-dog_454510-56.jpg?w=2000" alt="Logo">
+        </a>
+        <span class="navbar-burger burger" data-target="navbarMenu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </span>
+      </div>
+      <div id="navbarMenu" class="navbar-menu">
+        <div class="navbar-end">
+          <div class=" navbar-item">
+         
+          </div>
+          <a href="index.html" class="navbar-item is-active is-size-5 has-text-weight-semibold">
+            Home
+          </a>
+         
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- END NAV -->
+
+  <!-- Image -->
+  <section class="hero ">
+    <div class="hero-body">
+      <div class="container">
+        <div class="columns">
+          <div class="column is-8 is-offset-2">
+            <figure class="image is-3by3">
+              <img src="https://img.freepik.com/premium-vector/cute-petshop-logo-with-cat-dog_454510-56.jpg?w=2000" alt="">
+            </figure>
+          </div>
+        </div>
+
+        <section class="section">
+          <div class="columns">
+            <div class="column is-8 is-offset-2">
+              <div class="content is-medium">
+                <h2 class="subtitle is-4">Queens Pet Shop</h2>
+                <h1 class="title">Hey Everyone, welocme to yours Queens Pet shop!</h1>
+                <p> At Queens Pet Shop we have all kinds of compannion which makes the family happy and connected.  </p>
+                   <p class = "is-size-4"> Please visit us at:    <address>
+    101-Liberty Ave,<br>
+    South Richmond Hill,<br>
+    Queens, New York-11418<br>
+    USA
+  </address> </p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </section>
+
+  <!-- newsletter -->
+  <section class="section">
+    <div class="columns">
+      <div class="column is-10 is-offset-1">
+        <div class="container has-text-centered is-fluid">
+          <div class="hero is-light">
+            <div class="hero-body">
+              <h2 class="title is-4">Sign up for our newsletter</h2>
+                <div class="column is-6 is-offset-3">
+                  <div class="field has-addons has-addons-centered">
+                    <div class="control is-expanded">
+                      <input class="input " type="text" placeholder="Email address">
+                    </div>
+                    <div class="control">
+                      <a class="button is-info">
+                        Subscribe
+                      </a>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="content has-text-centered">
+      <p>
+        <strong> This page is created with Bulma - Blog theme template</strong> Inspired from <a href="https://gonzalojs.com">Gonzalo Gutierrez</a>. Based on the <a
+          href="http://jigsaw-blog-staging.tighten.co/">jigsaw-blog</a>. The source code is licensed
+        <a href="http://opensource.org/licenses/mit-license.php">MIT</a>
+      </p>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+
+      // Get all "navbar-burger" elements
+      const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+      // Check if there are any navbar burgers
+      if ($navbarBurgers.length > 0) {
+
+        // Add a click event on each of them
+        $navbarBurgers.forEach(el => {
+          el.addEventListener('click', () => {
+
+            // Get the target from the "data-target" attribute
+            const target = el.dataset.target;
+            const $target = document.getElementById(target);
+
+            // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+            el.classList.toggle('is-active');
+            $target.classList.toggle('is-active');
+
+          });
+        });
+      }
+
+    });
+  </script>
+
+</body>
+
+</html>
